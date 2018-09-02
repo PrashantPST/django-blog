@@ -7,11 +7,17 @@ posts = [
         'content': 'First post content',
         'date_posted': 'September 2, 2018',
     },
-{
+    {
         'author': 'Prashant Kumar',
         'title': 'Blog  Post 2',
         'content': 'Second post content',
         'date_posted': 'September 2, 2018',
+    },
+    {
+        'author': 'Nishant Chauhan',
+        'title': 'Blog  Post 3',
+        'content': 'Third post content',
+        'date_posted': 'September 3, 2018',
     },
 ]
 
