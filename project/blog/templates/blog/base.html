@@ -13,34 +13,32 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
           crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title> My Blog </title>
     <meta charset="UTF-8">
     <link rel="stylesheet"
           type="text/css"
           href="{% static 'blog/css/main.css' %}">
 
     {% if title %}
-        <title>Django Blog - {{ title }}</title>
+        <title> My Blog - {{ title }}</title>
     {% else %}
-        <title>Django Blog</title>
+        <title>My Blog</title>
     {% endif %}
 
 </head>
 <body>
       <header class="site-header">
-      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
-        <div class="container">
-          <a class="navbar-brand mr-4"
-             href="{% url 'blog-home' %}">Django Blog
-          </a>
-          <button class="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarToggle"
-                  aria-controls="navbarToggle"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+          <div class="container">
+            <a class="navbar-brand mr-4" href="{% url 'blog-home' %}"> My Blog </a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarToggle"
+                    aria-controls="navbarToggle"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse"
                id="navbarToggle">
@@ -49,7 +47,7 @@
                  href="{% url 'blog-home' %}">Home
               </a>
               <a class="nav-item nav-link"
-                 href="{% url 'blog-about' %}">About
+                 href="{% url 'blog-about' %}">About Me
               </a>
             </div>
             <!-- Navbar Right Side -->
