@@ -3,6 +3,7 @@ from django.conf import settings
 from django.contrib.auth import views as auth_views
 from django.urls import path, include
 from django.conf.urls.static import static
+from django.views.generic import RedirectView
 from users import views as users_views
 
 
@@ -27,7 +28,9 @@ urlpatterns = [
          auth_views.PasswordResetCompleteView.as_view(
              template_name='users/password_reset_complete.html'),
          name='password_reset_complete'),
+    path('', RedirectView.as_view(pattern_name='blog-home')),
     path('posts/', include('blog.urls')),
+
 ]
 
 if settings.DEBUG:
