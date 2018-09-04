@@ -1,8 +1,8 @@
 from django.urls import path
 from .views import (
+    PostCreateView,
     PostListView,
     PostDetailView,
-    PostCreateView,
     PostUpdateView,
     PostDeleteView,
 )
