@@ -16,7 +16,7 @@
           rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet">
 
-    <title> My Blog </title>
+    <title> MY BLOG </title>
     <meta charset="UTF-8">
     <link rel="stylesheet"
           type="text/css"
@@ -34,7 +34,7 @@
         <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
           <div class="container">
             <a class="navbar-brand mr-4"
-               style="pointer-events: none; cursor: default;" href=""> My Blog </a>
+               style="pointer-events: none; cursor: default;" href=""> MY BLOG </a>
             <button class="navbar-toggler"
                     type="button"
                     data-toggle="collapse"
@@ -48,30 +48,30 @@
                id="navbarToggle">
             <div class="navbar-nav mr-auto">
               <a class="nav-item nav-link"
-                 href="{% url 'blog-home' %}">Home
+                 href="{% url 'blog-home' %}">HOME
               </a>
               <a class="nav-item nav-link"
-                 href="{% url 'about-me' %}">About Me
+                 href="{% url 'about-me' %}">ABOUT ME
               </a>
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
                 {% if user.is_authenticated %}
                   <a class="nav-item nav-link"
-                     href="{% url 'post-create' %}">New Post
+                     href="{% url 'post-create' %}">NEW POST
                   </a>
                   <a class="nav-item nav-link"
-                     href="{% url 'profile' %}">Profile
+                     href="{% url 'profile' %}">PROFILE
                   </a>
                   <a class="nav-item nav-link"
-                     href="{% url 'logout' %}">Logout
+                     href="{% url 'logout' %}">LOGOUT
                   </a>
                 {% else %}
                       <a class="nav-item nav-link"
-                         href="{% url 'login' %}">Login
+                         href="{% url 'login' %}">LOGIN
                       </a>
                       <a class="nav-item nav-link"
-                         href="{% url 'register' %}">Register
+                         href="{% url 'register' %}">REGISTER
                       </a>
                 {% endif %}
             </div>
