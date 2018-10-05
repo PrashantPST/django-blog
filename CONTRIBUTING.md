@@ -1,1 +1,2 @@
+A CONTRIBUTING.md file discusses the code style guide, processes, and guidelines for people wishing to contribute code through Pull Requests to your project. This is helpful in lowering the barrier for people wishing to contribute code. First time contributors might be nervous about doing something wrong or out of convention and the more detailed this document it is the more they can check themselves without having to ask questions that they might be too shy to ask.
 
