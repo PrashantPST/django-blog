@@ -1,6 +1,5 @@
 {% load static %}
 
-<!DOCTYPE html>
 <html lang="en">
 <link>
 
@@ -94,9 +93,8 @@
           {% block content %}{% endblock %}
         </div>
         <div class="col-md-4">
-          <div class="content-section">
-            <h3>Our Sidebar</h3>
-            <p class='text-muted'>You can put any information here you'd like.
+            <div class="content-section">
+                <h3> Recent Posts </h3>
               <ul class="list-group">
                 <li class="list-group-item list-group-item-light">Latest Posts</li>
                 <li class="list-group-item list-group-item-light">Announcements</li>
@@ -108,6 +106,16 @@
         </div>
         </div>
         </main>
+
+
+      <!-- Footer -->
+
+      <footer class="footer">
+             <h3> <p>
+                     <img style="background-color: crimson;" src="{% static 'blog/img/code.svg' %}"> with <img src="{% static 'blog/img/heart.svg' %}"> by Me
+                  </p>
+             </h3>
+      </footer>
 
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
