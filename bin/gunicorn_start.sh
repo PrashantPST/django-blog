@@ -3,7 +3,12 @@
 NAME="blog_app"
 DJANGODIR=/home/pst/django-blog/project
 SOCKFILE=/home/pst/django-blog/run/gunicorn.sock
-NUM_WORKERS=9
+
+OS=$(uname -s)
+if [ "$OS" = "Linux" ]; then
+    NUM_WORKERS=$(( 2 * $(nproc --all) + 1 ))
+fi
+
 DJANGO_SETTINGS_MODULE=project.settings
 DJANGO_WSGI_MODULE=project.wsgi
 
