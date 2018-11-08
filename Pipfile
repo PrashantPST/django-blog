@@ -11,6 +11,9 @@ requests = "*"
 gunicorn = "*"
 Django = "==2.1.1"
 pillow = "*"
+djangorestframework = "*"
+django-cors-headers = "*"
+python-decouple = "*"
 
 [dev-packages]
 
