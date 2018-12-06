@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NAME="blog_app"
+NAME="Blog_Project"
 DJANGODIR=/home/pst/django-blog/project
 SOCKFILE=/home/pst/django-blog/run/gunicorn.sock
 
@@ -21,7 +21,6 @@ export DJANGO_SETTINGS_MODULE=$DJANGO_SETTINGS_MODULE
 RUNDIR=$(dirname $SOCKFILE)
 test -d $RUNDIR || mkdir -p $RUNDIR
 
-# Programs meant to be run under supervisor should not daemonize themselves (do not use --daemon)
 exec ../.venv/bin/gunicorn ${DJANGO_WSGI_MODULE}:application \
   -n $NAME \
   -w $NUM_WORKERS \
